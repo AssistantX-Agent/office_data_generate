@@ -1,6 +1,6 @@
 # office_data_generate
 
->有问题随时微信联系我。
+>有问题，或者自己的新想法新进展，都可以微信随时联系我。
 
 ## 更新
 重新定义了生成指令的字段，新增了facility accompaniment，删除了destination。在逻辑上，我对物品附带的动作进行了分类，
