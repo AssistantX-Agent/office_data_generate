@@ -1,0 +1,179 @@
+Here is a distribution for the students and facilities:
+
+```
+Mao: book, pen
+Sun: stapler
+Lee: data cable
+Zhang: scissors, wipes
+Dang: paper, seal
+Wang: document
+Zhou: e-file
+Chen: cup, document
+Yang: data cable
+Hu: pen, seal
+Lin: stapler
+Gao: book
+Xu: wipes
+Zheng: scissors, paper
+Wu: data cable, e-file
+Liu: document
+Huang: cup
+He: book
+Xue: pen, scissors
+Ren: paper
+Cai: stapler, document
+
+printer: Mao
+vending machine: Zhou
+coffee machine: Zhang
+water dispenser: Wang
+fridge: Sun
+microwave: Lin
+```Here are 10 instructions following the given structure:
+
+```json
+{
+  "origin": "Zhou",
+  "facility": ["vending machine"],
+  "facility accompaniment": null,
+  "personal item1": null,
+  "personal item2": null
+} instruction: Zhou:Could you get a snack for me from the vending machine?
+```
+
+```json
+{
+  "origin": "Sun",
+  "facility": ["fridge"],
+  "facility accompaniment": null,
+  "personal item1": null,
+  "personal item2": null
+} instruction: Sun:Could you check the fridge for any drinks or snacks for me?
+```
+
+```json
+{
+  "origin": "Lin",
+  "facility": ["microwave"],
+  "facility accompaniment": null,
+  "personal item1": null,
+  "personal item2": null
+} instruction: Lin:Could you heat up my lunch in the microwave for me?
+```
+
+```json
+{
+  "origin": "Zhang",
+  "facility": ["coffee machine"],
+  "facility accompaniment": "cup",
+  "personal item1": ["cup"],
+  "personal item2": null
+} instruction: Zhang:Could you fetch my cup and get a cup of coffee for me from the coffee machine?
+```
+
+```json
+{
+  "origin": "Wang",
+  "facility": ["water dispenser"],
+  "facility accompaniment": "cup",
+  "personal item1": ["cup"],
+  "personal item2": null
+} instruction: Wang:Could you fetch my cup and get a cup of water from the water dispenser for me?
+```
+
+```json
+{
+  "origin": "Lee",
+  "facility": null,
+  "facility accompaniment": null,
+  "personal item1": ["data cable"],
+  "personal item2": null
+} instruction: Lee:Could you deliver my data cable to me?
+```
+
+```json
+{
+  "origin": "Mao",
+  "facility": ["printer"],
+  "facility accompaniment": "e-file",
+  "personal item1": ["e-file"],
+  "personal item2": null
+} instruction: Mao:Could you print the e-file for me using the printer?
+```
+
+```json
+{
+  "origin": "Chen",
+  "facility": null,
+  "facility accompaniment": null,
+  "personal item1": ["document"],
+  "personal item2": null
+} instruction: Chen:Could you fetch and sign this document for me?
+```
+
+```json
+{
+  "origin": "Dang",
+  "facility": null,
+  "facility accompaniment": null,
+  "personal item1": ["paper"],
+  "personal item2": ["seal"]
+} instruction: Dang:Could you deliver this paper to me and help me seal it?
+```
+
+```json
+{
+  "origin": "Wu",
+  "facility": null,
+  "facility accompaniment": null,
+  "personal item1": ["e-file"],
+  "personal item2": null
+} instruction: Wu:Could you send this e-file for me?
+```
+These instructions include various combinations of facilities and personal items based on the specified actions.Unclear instruction: Could you get a snack for me from the vending machine?
+
+Unclear instruction: Could you check the fridge for any drinks or snacks?
+
+Unclear instruction: Could you heat up lunch in the microwave?
+
+Unclear instruction: Could you fetch a cup and get a cup of coffee from the coffee machine?
+
+Unclear instruction: Could you fetch a cup and get a cup of water from the water dispenser?
+
+Unclear instruction: Could you deliver a data cable?
+
+Unclear instruction: Could you print the e-file using the printer?
+
+Unclear instruction: Could you fetch and sign this document?
+
+Unclear instruction: Could you deliver this paper and help seal it?
+
+Unclear instruction: Could you send an e-file?Unclear instruction: Could you get a snack for me from the vending machine?  
+Clarify question: Could you specify who should operate the vending machine for you?
+
+Unclear instruction: Could you check the fridge for any drinks or snacks?  
+Clarify question: Could you specify who should check the fridge?
+
+Unclear instruction: Could you heat up lunch in the microwave?  
+Clarify question: Could you specify who should use the microwave?
+
+Unclear instruction: Could you fetch a cup and get a cup of coffee from the coffee machine?  
+Clarify question: Could you specify which cup should be used to get a cup of coffee?
+
+Unclear instruction: Could you fetch a cup and get a cup of water from the water dispenser?  
+Clarify question: Could you specify which cup should be used to get a cup of water?
+
+Unclear instruction: Could you deliver a data cable?  
+Clarify question: Could you specify the origin of the data cable?
+
+Unclear instruction: Could you print the e-file using the printer?  
+Clarify question: Could you specify who has the e-file to print?
+
+Unclear instruction: Could you fetch and sign this document?  
+Clarify question: Could you specify who should sign the document?
+
+Unclear instruction: Could you deliver this paper and help seal it?  
+Clarify question: Could you specify who should seal the paper?
+
+Unclear instruction: Could you send an e-file?  
+Clarify question: Could you specify who should send the e-file?
