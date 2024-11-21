@@ -86,7 +86,7 @@ output_miss_ins = inference_chat(chat_action, 'gpt-4o', API_url, token)
 print(output_miss_ins)
 output_data += output_miss_ins
 prompt = generate_clarify_prompt(output_env,output_miss_ins)
-chat_action = init_action_chat()
+chat_action = init_clarify_chat()
 chat_action = add_response("user", prompt, chat_action)
 output_clar = inference_chat(chat_action, 'gpt-4o', API_url, token)
 print(output_clar)
